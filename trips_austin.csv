@@ -1,0 +1,101 @@
+trip_id,subscriber_type,bikeid,start_time,start_station_id,start_station_name,end_station_id,end_station_name,duration_minutes
+9900120174,Local365,439,2015-04-24 09:12:00+00:00,,Shop,,Shop,1
+9900339969,Local365,201,2014-12-19 10:12:00+00:00,,Main Office,,Shop,31
+9900176813,Walk Up,896,2015-06-18 09:12:00+00:00,2494,2nd & Congress,,Shop,29
+9900338837,Walk Up,152,2014-12-14 06:12:00+00:00,2495,4th & Congress,,Shop,1893
+9900145367,Walk Up,957,2015-05-14 11:12:00+00:00,2495,4th & Congress,,Shop,29
+9900198755,Walk Up,874,2015-07-03 21:12:00+00:00,2495,4th & Congress,,Shop,6584
+9900201067,Walk Up,79,2015-07-06 06:12:00+00:00,2495,4th & Congress,,Shop,2126
+9900339021,Walk Up,37,2014-12-14 20:12:00+00:00,2496,8th & Congress,,Shop,2274
+9900035539,Walk Up,93,2015-02-21 06:12:00+00:00,2496,8th & Congress,,Shop,347
+9900077923,Walk Up,551,2015-03-17 21:12:00+00:00,2496,8th & Congress,,Shop,2583
+9900077925,Walk Up,19,2015-03-17 21:12:00+00:00,2496,8th & Congress,,Shop,2581
+9900147540,Local365,14,2015-05-18 09:12:00+00:00,2540,17th & Guadalupe,,Shop,7
+9900224569,Local365,572,2015-08-01 10:12:00+00:00,2540,17th & Guadalupe,,Shop,16
+9900034650,Founding Member,922,2015-02-18 16:12:00+00:00,2547,Guadalupe & 21st,,Shop,11
+9900117578,Walk Up,911,2015-04-19 09:12:00+00:00,,ACC - West & 12th,,Shop,456
+9900198831,Walk Up,207,2015-07-04 01:12:00+00:00,2563,Davis at Rainey Street,,Shop,812
+9900091360,Walk Up,965,2015-03-29 00:12:00+00:00,2563,Davis at Rainey Street,,Shop,1959
+9900236990,Walk Up,273,2015-08-28 13:12:00+00:00,2499,City Hall / Lavaca & 2nd,,Shop,106
+9900227312,Walk Up,528,2015-08-06 15:12:00+00:00,2562,San Jacinto & 8th Street,,Shop,29
+9900313427,Annual Membership (Austin B-cycle),213,2014-11-06 09:12:00+00:00,2570,South Congress & Academy,,Shop,18
+9900140472,Walk Up,539,2015-05-02 16:12:00+00:00,2548,UT West Mall @ Guadalupe,,Shop,3923
+9900141070,Founding Member,263,2015-05-03 12:12:00+00:00,2548,UT West Mall @ Guadalupe,,Shop,13
+9900149184,Walk Up,823,2015-05-22 02:12:00+00:00,2548,UT West Mall @ Guadalupe,,Shop,682
+9900149185,Walk Up,998,2015-05-22 03:12:00+00:00,2548,UT West Mall @ Guadalupe,,Shop,4744
+9900176644,Founding Member,963,2015-06-17 12:12:00+00:00,2548,UT West Mall @ Guadalupe,,Shop,10
+9900004553,Local365,446,2015-01-08 09:12:00+00:00,2569,East 11th St. & San Marcos,,Shop,29
+9900005369,Local365,466,2015-01-15 08:12:00+00:00,2569,East 11th St. & San Marcos,,Shop,8
+9900071094,Local365,843,2015-03-15 07:12:00+00:00,2569,East 11th St. & San Marcos,,Shop,15
+9900169235,Local365,349,2015-06-02 07:12:00+00:00,2569,East 11th St. & San Marcos,,Shop,22
+9900170555,Local365,669,2015-06-05 08:12:00+00:00,2569,East 11th St. & San Marcos,,Shop,29
+9900340754,Local365,554,2014-12-22 13:12:00+00:00,2504,South Congress & Elizabeth,,Shop,17
+9900064920,Local365,440,2015-03-08 20:12:00+00:00,2538,Bullock Museum @ Congress & MLK,,Shop,9
+9900311535,24-Hour Kiosk (Austin B-cycle),669,2014-11-01 08:12:00+00:00,2497,Capitol Station / Congress & 11th,,Shop,276
+9900006751,Walk Up,72,2015-01-18 09:12:00+00:00,2549,Long Center @ South 1st & Riverside,,Shop,130
+9900123986,Founding Member,660,2015-04-30 14:12:00+00:00,2823,Capital Metro HQ - East 5th at Broadway,,Shop,26
+9900107775,Founding Member,272,2015-04-01 12:12:00+00:00,2498,Convention Center / 4th St. @ MetroRail,,Shop,19
+9900226297,Walk Up,829,2015-08-04 12:12:00+00:00,2498,Convention Center / 4th St. @ MetroRail,,Shop,344
+9900115333,Founding Member,958,2015-04-15 10:12:00+00:00,2561,State Capitol Visitors Garage @ San Jacinto & 12th,,Shop,3
+9900176663,Local365,650,2015-06-17 14:12:00+00:00,2561,State Capitol Visitors Garage @ San Jacinto & 12th,,Shop,5
+16898448,Walk Up,1857,2018-03-18 22:51:20+00:00,2501,5th & Bowie,,Stolen,3806
+9900298869,Walk Up,127,2015-10-10 19:12:38+00:00,2574,Zilker Park,,Stolen,3632
+9900290440,Local365,277,2015-10-02 22:12:06+00:00,2494,2nd & Congress,,Stolen,8
+9900322570,Walk Up,439,2015-11-01 02:12:28+00:00,2496,8th & Congress,,Stolen,6609
+16863172,Walk Up,1795,2018-03-14 21:23:26+00:00,2542,Plaza Saltillo,,Stolen,2529
+9900326374,Walk Up,54,2015-11-09 21:12:31+00:00,2540,17th & Guadalupe,,Stolen,3624
+16675492,U.T. Student Membership,874,2018-02-09 18:56:59+00:00,3797,21st & University,,Stolen,6832
+16796969,U.T. Student Membership,265,2018-03-06 00:27:55+00:00,3798,21st & Speedway @PCL,,Stolen,919
+9900333670,Walk Up,965,2015-11-27 01:12:17+00:00,2565,Trinity & 6th Street,,Stolen,5223
+9900333086,Walk Up,545,2015-11-25 03:12:40+00:00,2565,Trinity & 6th Street,,Stolen,7902
+11712091,Walk Up,327,2016-09-02 06:37:15+00:00,2565,Trinity & 6th Street,,Stolen,6118
+11714202,Walk Up,122,2016-09-02 09:00:56+00:00,2565,Trinity & 6th Street,,Stolen,5974
+17151360,Walk Up,1899,2018-04-21 15:29:10+00:00,2563,Davis at Rainey Street,,Stolen,4302
+17210718,Weekender,919,2018-04-27 21:45:22+00:00,2571,Red River & 8th Street,,Stolen,3903
+9900259257,Walk Up,93,2015-09-18 08:12:05+00:00,2712,Toomey Rd @ South Lamar,,Stolen,2863
+9900012849,Walk Up,19,2016-01-07 17:12:35+00:00,2711,Barton Springs @ Kinney Ave,,Stolen,21296
+9900348283,Walk Up,8,2015-12-17 20:12:00+00:00,2566,Pfluger Bridge @ W 2nd Street,,Stolen,13981
+13857913,Walk Up,135,2017-02-26 14:32:45+00:00,2566,Pfluger Bridge @ W 2nd Street,,Stolen,1404
+17134756,U.T. Student Membership,2122,2018-04-19 17:20:23+00:00,3799,23rd & San Jacinto @ DKR Stadium,,Stolen,5498
+17187153,Local365,2095,2018-04-25 15:25:04+00:00,2497,Capitol Station / Congress & 11th,,Stolen,1463
+9900331256,Walk Up,384,2015-11-20 09:12:36+00:00,2498,Convention Center / 4th St. @ MetroRail,,Stolen,2950
+13555129,Walk Up,578,2017-01-27 01:35:26+00:00,2498,Convention Center / 4th St. @ MetroRail,,Stolen,5189
+13564817,Walk Up,393,2017-01-28 04:57:28+00:00,2561,State Capitol Visitors Garage @ San Jacinto & 12th,,Stolen,4833
+9900313113,24-Hour Kiosk (Austin B-cycle),442,2014-11-04 06:12:00+00:00,2495,4th & Congress,,Missing,3494
+9900028751,Walk Up,957,2015-02-06 21:12:00+00:00,2495,4th & Congress,,Missing,3913
+9900152785,Local30,113,2015-05-28 12:12:00+00:00,2496,8th & Congress,,Missing,29
+9900073751,Walk Up,947,2015-03-16 08:12:00+00:00,,Mobile Station,,Missing,5950
+9900036087,Explorer,661,2015-02-21 15:12:00+00:00,2542,Plaza Saltillo,,Missing,262
+9900064133,Walk Up,223,2015-03-07 09:12:00+00:00,2537,West & 6th St.,,Missing,250
+9900035781,Walk Up,875,2015-02-21 13:12:00+00:00,2536,Waller & 6th St.,,Missing,412
+9900225145,Walk Up,2459,2015-08-01 23:12:00+00:00,2536,Waller & 6th St.,,Missing,2138
+9900028873,Walk Up,75,2015-02-07 12:12:00+00:00,2707,Rainey St @ Cummings,,Missing,3000
+9900035532,Walk Up,801,2015-02-21 03:12:00+00:00,2565,Trinity & 6th Street,,Missing,1040
+9900035533,Walk Up,976,2015-02-21 03:12:00+00:00,2565,Trinity & 6th Street,,Missing,3212
+9900035531,Walk Up,283,2015-02-21 03:12:00+00:00,2565,Trinity & 6th Street,,Missing,3212
+9900068316,Walk Up,890,2015-03-14 02:12:00+00:00,2565,Trinity & 6th Street,,Missing,29
+9900177598,Walk Up,398,2015-06-20 04:12:00+00:00,2565,Trinity & 6th Street,,Missing,1687
+9900150935,Walk Up,867,2015-05-24 16:12:00+00:00,2563,Davis at Rainey Street,,Missing,5566
+9900206215,Walk Up,116,2015-07-17 04:12:00+00:00,2563,Davis at Rainey Street,,Missing,3054
+9900029490,Walk Up,998,2015-02-08 04:12:00+00:00,2571,Red River & 8th Street,,Missing,3154
+9900029489,Walk Up,759,2015-02-08 04:12:00+00:00,2571,Red River & 8th Street,,Missing,3153
+9900009095,Walk Up,488,2015-01-25 03:12:00+00:00,2545,ACC - Rio Grande & 12th,,Missing,3193
+9900140470,Walk Up,999,2015-05-02 16:12:00+00:00,2548,UT West Mall @ Guadalupe,,Missing,4295
+9900205702,Walk Up,201,2015-07-16 03:12:00+00:00,2548,UT West Mall @ Guadalupe,,Missing,1813
+9900152687,Walk Up,75,2015-05-28 00:12:00+00:00,2502,Barton Springs & Riverside,,Missing,2464
+9900169971,Founding Member,104,2015-06-03 20:12:00+00:00,2711,Barton Springs @ Kinney Ave,,Missing,29
+9900064927,Walk Up,340,2015-03-09 07:12:00+00:00,2549,Long Center @ South 1st & Riverside,,Missing,4659
+9900180161,Walk Up,270,2015-06-26 03:12:00+00:00,2498,Convention Center / 4th St. @ MetroRail,,Missing,3279
+23298154,Local365,19775,2020-12-10 14:52:24+00:00,2552,3rd/West,2552,3rd/West,41
+23321039,Pay-as-you-ride,332,2020-12-18 15:43:07+00:00,2552,3rd/West,2552,3rd/West,74
+23326829,Local365,19171,2020-12-20 15:44:21+00:00,2501,5th/Bowie,2552,3rd/West,62
+24786257,Local365,19646,2021-08-08 17:31:07+00:00,3390,6th/Brazos,2552,3rd/West,63
+24743726,Local365,17438,2021-08-03 14:34:41+00:00,4047,8th/Lavaca,2552,3rd/West,6
+23250433,Local365,19148,2020-11-27 18:25:50+00:00,4050,5th/Campbell,2552,3rd/West,5
+23361104,Local31,19442,2020-12-29 10:35:36+00:00,4050,5th/Campbell,2552,3rd/West,6
+23355883,Local365,097G,2020-12-28 09:54:50+00:00,2496,8th/Congress,2552,3rd/West,6
+24822948,Local31,21546,2021-08-13 17:46:46+00:00,4051,10th/Red River,2552,3rd/West,10
+23204501,U.T. Student Membership,18329,2020-11-17 15:40:48+00:00,2547,21st/Guadalupe,2552,3rd/West,7
+23314557,Local365,16935,2020-12-16 17:25:32+00:00,2547,21st/Guadalupe,2552,3rd/West,9
+24734280,Local31,21773,2021-08-02 09:06:06+00:00,2547,21st/Guadalupe,2552,3rd/West,8
+23179459,Local31,19239,2020-11-12 14:53:04+00:00,3687,Boardwalk West,2552,3rd/West,14
