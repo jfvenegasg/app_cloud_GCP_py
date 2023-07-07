@@ -14,7 +14,7 @@ st.set_page_config(layout="wide")
 
 
 def fetch_data(query):
-    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'shiny-apps-385622-08e5b9820326.json'
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'apps-392022-8c353b675061.json'
     client = bigquery.Client()
     query_job = client.query(query)
     df = query_job.to_dataframe()
