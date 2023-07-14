@@ -22,14 +22,14 @@ def fetch_data(query):
     return df
 
 with st.sidebar:
-    selected = menu.option_menu("App cloud gcp py", ["Inicio","Analisis datos Bigquery Austin Trips","Analisis datos Bigquery Austin Crime"], 
-        icons=['house', 'person-rolodex','person-rolodex'], menu_icon="cast", default_index=0)
+    selected = menu.option_menu("App cloud gcp py", ["Inicio","Analisis datos Austin Trips","Analisis datos Austin Crime","Analisis datos Austin Waste"], 
+        icons=['house', 'person-rolodex','person-rolodex','person-rolodex'], menu_icon="cast", default_index=0)
     selected
 
 if selected == "Inicio":
     st.title("Esta es una app de demostración que utiliza los servicios GCP.")
 
-if selected == "Analisis datos Bigquery Austin Trips":
+if selected == "Analisis datos Austin Trips":
 
     
     #c=st.empty()
@@ -56,8 +56,9 @@ if selected == "Analisis datos Bigquery Austin Trips":
         col1.text("Datos del sistema de bicicletas de la ciudad de Austin")
         col1.dataframe(df.head(10))
 
-        grouped_data = df.groupby('subscriber_type')['duration_minutes'].sum().reset_index()
-        fig = px.bar(grouped_data, x='subscriber_type', y='duration_minutes')
+        grouped_data = df.groupby('trip_id')['duration_minutes'].sum().reset_index()
+        grouped_data = grouped_data.sort_values(by='duration_minutes', ascending=False)
+        fig = px.bar(grouped_data, x='trip_id', y='duration_minutes')
         col2.text("Grafico de la duracion de minutos de los viajes del sistema de bicicleta")
         col2.plotly_chart(fig)
 
@@ -67,12 +68,13 @@ if selected == "Analisis datos Bigquery Austin Trips":
         col1.text("Datos del sistema de bicicletas de la ciudad de Austin")
         col1.dataframe(df.head(10))
 
-        grouped_data = df.groupby('subscriber_type')['duration_minutes'].sum().reset_index()
-        fig = px.bar(grouped_data, x='subscriber_type', y='duration_minutes')
+        grouped_data = df.groupby('trip_id')['duration_minutes'].sum().reset_index()
+        grouped_data = grouped_data.sort_values(by='duration_minutes', ascending=False)
+        fig = px.bar(grouped_data, x='trip_id', y='duration_minutes')
         col2.text("Grafico de la duracion de minutos de los viajes del sistema de bicicleta")
         col2.plotly_chart(fig)    
 
-if selected == "Analisis datos Bigquery Austin Crime":
+if selected == "Analisis datos Austin Crime":
 
     if st.button("Descarga"):
         query = """ SELECT description,latitude,longitude,timestamp FROM `bigquery-public-data.austin_crime.crime` LIMIT 1000 """
@@ -104,5 +106,37 @@ if selected == "Analisis datos Bigquery Austin Crime":
             'conteo':conteo.values})
         
         fig = px.bar(df_conteo, x='crimen', y='conteo')
+        col2.text("Grafico de la duracion de minutos de los viajes del sistema de bicicleta")
+        col2.plotly_chart(fig)
+
+if selected == "Analisis datos Austin Waste":
+
+    if st.button("Descarga"):
+        query = """ SELECT load_id,load_type,load_weight FROM `bigquery-public-data.austin_waste.waste_and_diversion` """
+        df=fetch_data(query)
+        df.to_csv('waste_austin.csv', index=False)
+        
+        col1, col2 = st.columns(2)
+        col1.text("Datos Waste en la ciudad de Austin")
+        col1.dataframe(df.head(10))
+
+        grouped_data = df.groupby('load_type')['load_id'].sum().reset_index()
+        grouped_data = grouped_data.sort_values(by='load_id', ascending=False)
+        
+        
+        fig = px.bar(grouped_data, x='load_type', y='load_id')
+        col2.text("Grafico de la duracion de minutos de los viajes del sistema de bicicleta")
+        col2.plotly_chart(fig)
+
+    if st.button("Carga"):
+        df = pd.read_csv('waste_austin.csv')
+        col1, col2 = st.columns(2)
+        col1.text("Datos Waste en la ciudad de Austin")
+        col1.dataframe(df.head(10))
+
+        grouped_data = df.groupby('load_type')['load_id'].sum().reset_index()
+        grouped_data = grouped_data.sort_values(by='load_id', ascending=False)
+
+        fig = px.bar(grouped_data, x='load_type', y='load_id')
         col2.text("Grafico de la duracion de minutos de los viajes del sistema de bicicleta")
         col2.plotly_chart(fig)
