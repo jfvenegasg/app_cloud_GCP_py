@@ -22,8 +22,8 @@ def fetch_data(query):
     return df
 
 with st.sidebar:
-    selected = menu.option_menu("App cloud gcp py", ["Inicio","Analisis datos Austin Trips","Analisis datos Austin Crime","Analisis datos Austin Waste"], 
-        icons=['house', 'person-rolodex','person-rolodex','person-rolodex'], menu_icon="cast", default_index=0)
+    selected = menu.option_menu("App cloud gcp py", ["Inicio","Analisis datos Austin Trips","Analisis datos Austin Crime","Analisis datos Austin Waste","Analisis datos Austin Incident 2016"], 
+        icons=['house', 'person-rolodex','person-rolodex','person-rolodex','person-rolodex'], menu_icon="cast", default_index=0)
     selected
 
 if selected == "Inicio":
@@ -138,5 +138,40 @@ if selected == "Analisis datos Austin Waste":
         grouped_data = grouped_data.sort_values(by='load_id', ascending=False)
 
         fig = px.bar(grouped_data, x='load_type', y='load_id')
+        col2.text("Grafico de la duracion de minutos de los viajes del sistema de bicicleta")
+        col2.plotly_chart(fig)
+
+if selected == "Analisis datos Austin Incident 2016":
+
+    if st.button("Descarga"):
+        query = """SELECT descript,date,time,address FROM `bigquery-public-data.austin_incidents.incidents_2016`"""
+        df=fetch_data(query)
+        df.to_csv('incident_2016_austin.csv', index=False)
+        
+        col1, col2 = st.columns(2)
+        col1.text("Datos Incidentes 2016 en la ciudad de Austin")
+        col1.dataframe(df.head(10))
+
+        conteo = df['descript'].value_counts()
+        df_conteo=pd.DataFrame({
+            'descript':conteo.index,
+            'total':conteo.values})        
+        
+        fig = px.bar(df_conteo, x='descript', y='total')
+        col2.text("Grafico de la duracion de minutos de los viajes del sistema de bicicleta")
+        col2.plotly_chart(fig)
+
+    if st.button("Carga"):
+        df = pd.read_csv('incident_2016_austin.csv')
+        col1, col2 = st.columns(2)
+        col1.text("Datos Incidentes 2016 en la ciudad de Austin")
+        col1.dataframe(df.head(10))
+
+        conteo = df['descript'].value_counts()
+        df_conteo=pd.DataFrame({
+            'descript':conteo.index,
+            'total':conteo.values}) 
+
+        fig = px.bar(df_conteo, x='descript', y='total')
         col2.text("Grafico de la duracion de minutos de los viajes del sistema de bicicleta")
         col2.plotly_chart(fig)
