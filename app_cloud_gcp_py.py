@@ -9,6 +9,7 @@ from google.cloud import bigquery
 from google.cloud import storage
 import plotly.express as px
 
+
 st.set_page_config(layout="wide")
 #pip install protobuf==3.20.*
 
@@ -62,6 +63,7 @@ if selected == "Analisis datos Austin Trips":
         col2.text("Grafico de la duracion de minutos de los viajes del sistema de bicicleta")
         col2.plotly_chart(fig)
 
+        
     if st.button("Carga"):
         df = pd.read_csv('trips_austin.csv')
         col1, col2 = st.columns(2)
@@ -73,6 +75,17 @@ if selected == "Analisis datos Austin Trips":
         fig = px.bar(grouped_data, x='trip_id', y='duration_minutes')
         col2.text("Grafico de la duracion de minutos de los viajes del sistema de bicicleta")
         col2.plotly_chart(fig)    
+
+        with st.container():
+        #porcentajes = df['duration_minutes']/df['duration_minutes'].sum()*100
+        #df['percentage'] = porcentajes
+        #datos_porcentaje=df
+        #grouped_data = grouped_data.sort_values(by='duration_minutes', ascending=False)
+            porcentajes = grouped_data['duration_minutes']/grouped_data['duration_minutes'].sum()*100
+            grouped_data['percentage'] = porcentajes
+            fig_pie = px.pie(grouped_data, names='trip_id', values='percentage', title='Gráfico de Torta')
+            st.text("Grafico de la duracion de minutos de los viajes del sistema de bicicleta")
+            st.plotly_chart(fig_pie)
 
 if selected == "Analisis datos Austin Crime":
 
